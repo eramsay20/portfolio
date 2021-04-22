@@ -3395,7 +3395,6 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
-			left: 40px;
 			opacity: 1;
 			margin: 0 0 1.3em 0;
 		}
@@ -3563,6 +3562,16 @@ input, select, textarea {
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
+			
+			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
+			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
+			-ms-transition: opacity 2s ease, -ms-transform 1s ease;
+			transition: opacity 2s ease, transform 1s ease;
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			opacity: 1;
 		}
 
 		#wrapper > header p {
